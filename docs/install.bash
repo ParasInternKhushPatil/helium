@@ -113,10 +113,10 @@ catkin init
 
 cd $IWD/catkin_ws/src
 if [ ! -d "helium" ]; then
-    git clone https://github.com/yanhwee/helium.git
+    git clone https://github.com/ParasInternKhushPatil/helium.git
 fi
 
-source /opt/ros/melodic/setup.bash
+source /opt/ros/noetic/setup.bash
 catkin build
 
 if ! grep -q "source $IWD/catkin_ws/devel/setup.bash" ~/.bashrc; then
