@@ -2,7 +2,7 @@
 set -e
 set -x
 
-DISTRO="melodic"
+DISTRO="noetic"
 IWD="$HOME"
 
 # Preventing sudo timeout https://serverfault.com/a/833888
@@ -27,7 +27,7 @@ if ! grep -q "source /opt/ros/$DISTRO/setup.bash" ~/.bashrc; then
     source ~/.bashrc
 fi
 
-sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential -y
+sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential -y
 
 sudo rosdep init || true
 rosdep update
@@ -36,8 +36,7 @@ rosdep update
 
 cd $IWD
 if [ ! -d "ardupilot" ]; then
-    #git clone https://github.com/ArduPilot/ardupilot
-    git clone https://github.com/yanhwee/ardupilot
+    git clone https://github.com/ArduPilot/ardupilot
 fi
 
 cd ardupilot
@@ -53,7 +52,7 @@ bash Tools/environment_install/install-prereqs-ubuntu.sh -y || true
 cd $IWD
 if [ ! -d "ardupilot_gazebo" ]; then
     #git clone https://github.com/khancyr/ardupilot_gazebo
-    git clone https://github.com/yanhwee/ardupilot_gazebo
+    git clone https://github.com/ParasInternKhushPatil/ardupilot_gazebo
 fi
 
 cd ardupilot_gazebo
@@ -85,7 +84,7 @@ wget -O - https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts
 
 # 5 Recommended
 
-sudo apt-get install python-catkin-tools -y
+sudo apt-get install python3-catkin-tools -y
 
 # 6 Optional
 
@@ -100,8 +99,8 @@ sed -i -e 's,https://api.ignitionfuel.org,https://fuel.ignitionrobotics.org/1.0/
 
 
 ### Helium Supporting Stack
-PYTHON_SITE_PACKAGES_PATH="$HOME/.local/lib/python3.6/site-packages"
-GAZEBO_PROTOBUF_MSGS_PATH="/usr/include/gazebo-9/gazebo/msgs/proto"
+PYTHON_SITE_PACKAGES_PATH="$HOME/.local/lib/python3.8/site-packages"
+GAZEBO_PROTOBUF_MSGS_PATH="/usr/include/gazebo-11/gazebo/msgs/proto"
 
 # 1A Catkin Workspace
 
