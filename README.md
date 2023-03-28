@@ -16,7 +16,7 @@ This installation script is modified based on the installation from https://gith
 #### Main SITL Stack
 - ArduPilot (Modified)
 - ArduPilot Gazebo Plugin (Modified)
-- Gazebo 1
+- Gazebo 11
 - ROS Noetic
 - MAVROS
 #### Supporting Stack
