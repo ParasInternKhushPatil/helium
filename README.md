@@ -2,7 +2,7 @@
 A drone synthetic environment development project based on Ardupilot, Gazebo & ROS.
 
 ## Learning the Basics
-https://github.com/yanhwee/ardupilot-gazebo-ros-guide
+[https://github.com/ParasInternKhushPatil/ardupilot-gazebo-ros-guide]
 
 ## Installation
 
@@ -10,7 +10,7 @@ https://github.com/yanhwee/ardupilot-gazebo-ros-guide
 From the terminal:  
 `wget -O - https://raw.githubusercontent.com/ParasInternKhushPatil/helium/master/docs/install.bash | bash`
 
-This installation script is modified based on the installation from https://github.com/yanhwee/ardupilot-gazebo-ros-guide. Refer to it for more details. It installs the following prerequisites and setups this repository. Note that this repository is a catkin package. Please restart after the installation.
+This installation script is modified based on the installation from https://github.com/ParasInternKhushPatil/ardupilot-gazebo-ros-guide. Refer to it for more details. It installs the following prerequisites and setups this repository. Note that this repository is a catkin package. Please restart after the installation.
 
 ### Prerequisites
 #### Main SITL Stack
