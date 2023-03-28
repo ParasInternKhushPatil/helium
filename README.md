@@ -8,7 +8,7 @@ https://github.com/yanhwee/ardupilot-gazebo-ros-guide
 
 ### Installation Script
 From the terminal:  
-`wget -O - https://raw.githubusercontent.com/yanhwee/helium/master/docs/install.bash | bash`
+`wget -O - https://raw.githubusercontent.com/ParasInternKhushPatil/helium/master/docs/install.bash | bash`
 
 This installation script is modified based on the installation from https://github.com/yanhwee/ardupilot-gazebo-ros-guide. Refer to it for more details. It installs the following prerequisites and setups this repository. Note that this repository is a catkin package. Please restart after the installation.
 
@@ -16,8 +16,8 @@ This installation script is modified based on the installation from https://gith
 #### Main SITL Stack
 - ArduPilot (Modified)
 - ArduPilot Gazebo Plugin (Modified)
-- Gazebo 9
-- ROS Melodic
+- Gazebo 1
+- ROS Noetic
 - MAVROS
 #### Supporting Stack
 - Catkin Workspace & Helium Package
