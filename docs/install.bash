@@ -107,7 +107,7 @@ GAZEBO_PROTOBUF_MSGS_PATH="/usr/include/gazebo-11/gazebo/msgs/proto"
 cd $IWD
 mkdir -p catkin_ws/src
 cd catkin_ws/
-catkin init
+catkin_make
 
 # 1B Helium Package
 
